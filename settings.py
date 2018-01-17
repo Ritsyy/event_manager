@@ -1,0 +1,1 @@
+DB_URI = 'mysql://eventuser:admin1234@localhost/eventbrite'
