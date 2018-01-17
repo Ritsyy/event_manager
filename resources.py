@@ -46,7 +46,6 @@ class EventsResource(Resource):
 
     @marshal_with(event_fields)
     def put(self, id):
-        import ipdb; ipdb.set_trace()
         parsed_args = parser.parse_args()
         event = session.query(Event).filter(Event.id == id).first()
         event.name = parsed_args['name']
